@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Sticky Scribble",
+    "description": "Title in the store and for the popup"
+  },
+  "appDesc": {
+    "message": "Install Sticky Scribble to make the scribble tool in Google Slides Sticky.",
+    "description": "Description as displayed in the appstore."
+  }
+}
