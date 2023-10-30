@@ -157,12 +157,13 @@ function setSelectionListener() {
   const allMenuItems = scribbleItem.parentNode.parentNode.parentNode.parentNode.childNodes
   allMenuItems.forEach(item => {
       item.addEventListener('click', (e) => {
-          SELECTION.scribble = e.target.textContent.toLowerCase().includes('scribble')
+        const select = e.target.parentNode.getElementsByClassName('sketchy-icon-scribble')[0]
+        SELECTION.scribble = e.target.textContent.toLowerCase().includes('scribble') || !!select;
           if (SELECTION.scribble) {
-              autoScribbleToggle()
+            autoScribbleToggle();
           }
       })
   })
   document.querySelector('#lineMenuButton')
-      .removeEventListener('click', setSelectionListener)
+    .removeEventListener('click', setSelectionListener);
 }
