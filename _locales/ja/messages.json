@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "スライド手書きツール",
+    "description": "Title in the store and for the popup"
+  },
+  "appDesc": {
+    "message": "スライド手書きをインストールすると、スライドのフリーハンドを持続させることができます。",
+    "description": "Description as displayed in the appstore."
+  }
+}
